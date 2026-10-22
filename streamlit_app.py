@@ -126,22 +126,22 @@ c1, c2, c3, c4 = st.columns(4)
 with c1:
     st.markdown(
         """<div class="metric-box"><div class="metric-title">📄 Điều khoản Đã Phân tích</div><div class="metric-value">35</div></div>""",
-        unsafe_allow_style_html=True,
+        unsafe_allow_html=True,
     )
 with c2:
     st.markdown(
         """<div class="metric-box" style="border-left-color: #22c55e;"><div class="metric-title">✅ Yêu cầu Tuân thủ</div><div class="metric-value">12</div></div>""",
-        unsafe_allow_style_html=True,
+        unsafe_allow_html=True,
     )
 with c3:
     st.markdown(
         """<div class="metric-box" style="border-left-color: #eab308;"><div class="metric-title">🔄 Quy trình Ảnh hưởng</div><div class="metric-value">08</div></div>""",
-        unsafe_allow_style_html=True,
+        unsafe_allow_html=True,
     )
 with c4:
     st.markdown(
         """<div class="metric-box" style="border-left-color: #38bdf8;"><div class="metric-title">🎯 Độ chính xác (Accuracy)</div><div class="metric-value">96.8%</div></div>""",
-        unsafe_allow_style_html=True,
+        unsafe_allow_html=True,
     )
 
 st.write("")
@@ -205,7 +205,7 @@ with tab1:
                 ):
                     st.markdown(
                         f"""<div class="warning-box">{response.text}</div>""",
-                        unsafe_allow_style_html=True,
+                        unsafe_allow_html=True,
                     )
                 else:
                     st.info(response.text)
