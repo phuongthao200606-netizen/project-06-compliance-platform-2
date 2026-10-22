@@ -196,7 +196,7 @@ with tab1:
                    "⚠️ Cảnh báo: Thiếu căn cứ nguồn rõ ràng trong văn bản NHNN được cung cấp."
                 """
                 full_prompt = f"{system_prompt}\n\nCâu hỏi: {user_query}"
-                response = model.generate_content(full_prompt)
+                model = genai.GenerativeModel("gemini-1.5-flash")
 
                 st.markdown("### 💬 Kết quả Phản hồi từ AI:")
                 if (
